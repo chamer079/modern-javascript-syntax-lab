@@ -66,3 +66,18 @@ const car = {
   myCar.model = "q7"
 
   console.log(myCar)
+
+
+// Exercise 6: Dynamic keys in objects
+// Create an object named userProfile. 
+// Define a variable named propertyName and assign a string to it (like a username, age, or email). 
+// Use propertyName as a dynamic key in userProfile, assigning a relevant value.
+
+// Your code here
+const propertyName = "username"
+
+const userProfile = {
+    [propertyName]: "pizzacat"
+}
+
+console.log(userProfile)
