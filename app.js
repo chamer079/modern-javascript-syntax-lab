@@ -81,3 +81,35 @@ const userProfile = {
 }
 
 console.log(userProfile)
+
+
+// Exercise 7: Import and Export
+    // 1. Initialize a node project:
+        // npm init -y
+    // 2. Add the following property to package.json:
+        // "type":"module",
+    // 3. Create two files: exportingFile.js and importingFile.js:
+        // touch exportingFile.js
+        // touch importingFile.js
+    // 4. In exportingFile.js add the following:
+        // export default 'Matt';
+    // 5. In importingFile.js add the following:
+        // import name from './exportingFile.js';
+        // console.log(name);
+    // 6. Run importingFile.js like so:
+        // node importingFile.js
+    // 7. To export additional values, update exportingFile.js like so:
+        // export default 'Matt';
+        // export const age = 43;
+        // export const job = 'programmer';
+    // 8. These additions can be imported by updating importingFile.js like so:
+        // import name, { age, job } from './exportingFile.js';
+        // console.log(name, age, job);
+    
+    
+
+    
+
+    
+
+
