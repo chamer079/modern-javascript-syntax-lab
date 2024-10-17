@@ -124,6 +124,25 @@ const madLib = (noun = "cat", adjective = "white") => {
 console.log("Default values: ",madLib())
 console.log("Passed in values: ", madLib("dog", "smelly"))
 
+
+// Exercise 9: Ternary operator
+// Convert the following `if...else` statement in to a ternary:
+/*
+let pizza = 'tasty';
+
+if (pizza === 'tasty') {
+  console.log('yum');
+} else {
+  console.log('yuck');
+}
+*/
+// Your code here
+let pizza = "tasty" 
+
+let quality = pizza === "tasty" ? "yum" : "yuck"
+
+
+console.log (quality)
     
 
 
