@@ -15,7 +15,7 @@ console.log(nums2)
 
 // Exercise 2: Array destructuring
 // Given the following array, use destructuring to pull out the first and second values and place them into variables. Log both variables.
-/*
+
 const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
 
 // Your code here
@@ -23,11 +23,11 @@ const [firstTopping, secondTopping] = pizzaToppings
 
 console.log(firstTopping)
 console.log(secondTopping)
-*/
+
 
 // Exercise 3: Destructuring objects
 // Given the following object, use destructuring to create variables `make` and `model` that will hold the respective values.
-/*
+
 const car = {
     make: 'Audi',
     model: 'q5',
@@ -38,7 +38,7 @@ const car = {
 
   console.log(make)
   console.log(model)
-*/
+
 
 // Exercise 4: Applying the spread operator on arrays
 // Duplicate the following array using the spread operator and assign it to `controversialPizzaToppings`. Then, log the variable.
@@ -127,7 +127,7 @@ console.log("Passed in values: ", madLib("dog", "smelly"))
 
 // Exercise 9: Ternary operator
 // Convert the following `if...else` statement in to a ternary:
-/*
+
 let pizza = 'tasty';
 
 if (pizza === 'tasty') {
@@ -135,7 +135,7 @@ if (pizza === 'tasty') {
 } else {
   console.log('yuck');
 }
-*/
+
 // Your code here
 let pizza = "tasty" 
 
@@ -157,10 +157,25 @@ const localLangConfig = null;  // Change to 'es', 'fr', etc., or keep it null
 // b. Assign LANG the value of localLangConfig or 'en' as a default
 
 // Your code here
-const LANG = localLangConfig || "en"
+const LANG = localLangConfig || "en"    // <- || reads left to right & returns 1st truthy value - all values === falsy, returns lasst value
 
 // Log the result
 console.log('Language setting:', LANG);
+
+
+// Exercise 11: Optional chaining
+// Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+
+const adventurer = {
+    name: 'Alice',
+  };
+  
+  let cat; // Your code here
+//   cat = adventurer.cat.age  // <- causes TypeError message
+  cat = adventurer.cat?.age
+  
+  console.log(cat);
+  
 
 
 
